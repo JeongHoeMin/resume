@@ -2,7 +2,7 @@
 import RecapCardLayout, {type IRecapCardProps} from "../layout/RecapCardLayout.vue";
 import DetailCardLayout, {type IDetailCardProps} from "../layout/DetailCardLayout.vue";
 
-interface IExperienceCardProps extends IRecapCardProps, IDetailCardProps {}
+export interface IExperienceCardProps extends IRecapCardProps, IDetailCardProps {}
 
 defineProps<IExperienceCardProps>()
 </script>
@@ -26,7 +26,7 @@ defineProps<IExperienceCardProps>()
 .card {
   width: 100%;
   display: flex;
-  margin: 0;
+  margin: 3.5rem 0 0;
   padding: 0;
 }
 
