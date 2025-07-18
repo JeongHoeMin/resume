@@ -20,7 +20,7 @@ const dateToString = (date: Date | null | string) => {
 </script>
 
 <template>
-  <div class="card">
+  <div class="recap-card">
     <slot name="default">
       <h2 class="title">{{ title }}</h2>
       <a class="sub-title" :href="subTitle">{{subTitle}}</a>
@@ -31,7 +31,7 @@ const dateToString = (date: Date | null | string) => {
 </template>
 
 <style scoped>
-.card {
+.recap-card {
   display: flex;
   flex-direction: column;
   align-items: start;
