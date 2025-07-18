@@ -40,6 +40,7 @@ const dateToString = (date: Date | null | string) => {
   width: 15rem;
   height: 11rem;
   padding: 1rem 0 0;
+  margin-inline: 1rem;
 
   h2,
   p {
