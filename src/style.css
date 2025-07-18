@@ -1,3 +1,24 @@
+/* 내 설정 */
+:root {
+  --cr-gray01: #f9f9f9;
+  --cr-gray02: #eeeeee;
+  --cr-gray03: #dddddd;
+  --cr-gray04: #cccccc;
+  --cr-gray05: #bbbbbb;
+  --cr-gray06: #999999;
+  --cr-gray07: #777777;
+  --cr-gray08: #555555;
+  --cr-gray09: #333333;
+}
+
+.caption {
+  font-size: 0.85rem;
+  font-style: italic;
+  white-space: pre-wrap;
+  color: var(--cr-gray07);
+}
+
+/* 기본 vite 설정 */
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -12,15 +33,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   
-  --cr-gray01: #f9f9f9;
-  --cr-gray02: #eeeeee;
-  --cr-gray03: #dddddd;
-  --cr-gray04: #cccccc;
-  --cr-gray05: #bbbbbb;
-  --cr-gray06: #999999;
-  --cr-gray07: #777777;
-  --cr-gray08: #555555;
-  --cr-gray09: #333333;
 }
 
 a {

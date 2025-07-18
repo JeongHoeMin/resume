@@ -4,7 +4,7 @@ import {computed} from "vue";
 
 const props = defineProps<{
   title?: string;
-  subTitle?: string;
+  link?: string;
   description?: string;
   period?: [Date | null | string, Date | null | string];
 }>();
@@ -23,7 +23,7 @@ const dateToString = (date: Date | null | string) => {
   <div class="recap-card">
     <slot name="default">
       <h2 class="title">{{ title }}</h2>
-      <a class="sub-title" :href="subTitle">{{subTitle}}</a>
+      <a class="caption link" :href="link">{{link}}</a>
       <p class="description">{{description}}</p>
       <p class="period">{{dateToString(periodStart)}} ~ {{dateToString(periodEnd)}}</p>
     </slot>
@@ -50,10 +50,7 @@ const dateToString = (date: Date | null | string) => {
   .title {
     font-size: 1.4rem;
   }
-  .sub-title {
-    font-size: 0.85rem;
-    font-style: italic;
-    color: var(--cr-gray07);
+  .link {
     &:hover {
       text-decoration: underline;
     }
