@@ -2,12 +2,14 @@
 import dayjs from "dayjs";
 import {computed} from "vue";
 
-const props = defineProps<{
+export interface IRecapCardProps {
   title?: string;
   link?: string;
   description?: string;
   period?: [Date | null | string, Date | null | string];
-}>();
+}
+
+const props = defineProps<IRecapCardProps>();
 
 const periodStart = computed<Date | null | string>(() => props.period ? props.period[0] : null);
 const periodEnd = computed<Date | null | string>(() => props.period ? props.period[1] : null);
@@ -38,8 +40,8 @@ const dateToString = (date: Date | null | string) => {
   text-align: start;
   justify-content: start;
   width: 15rem;
-  height: 11rem;
-  padding: 1rem 0 0;
+  height: 10rem;
+  padding: 1rem 0;
   margin-inline: 1rem;
 
   h2,
@@ -63,6 +65,16 @@ const dateToString = (date: Date | null | string) => {
   .period {
     color: var(--cr-gray08);
     font-size: 0.93rem
+  }
+}
+
+@media (max-width: 42rem) {
+  .recap-card {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
 </style>

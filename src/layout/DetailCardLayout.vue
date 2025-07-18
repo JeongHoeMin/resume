@@ -1,8 +1,10 @@
 <script setup lang="ts">
-defineProps<{
+export interface IDetailCardProps {
   summary: string;
   body: Array<string>;
-}>();
+}
+
+defineProps<IDetailCardProps>();
 </script>
 
 <template>
@@ -18,7 +20,7 @@ defineProps<{
 
 <style scoped>
 .detail-card {
-  min-width: 20rem;
+  min-width: 23rem;
   margin-inline: 1rem;
   .text {
     margin: 0;
