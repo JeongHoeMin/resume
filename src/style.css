@@ -7,10 +7,20 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
-  font-synthesis: none;
+  /*font-synthesis: none;*/
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  --cr-gray01: #f9f9f9;
+  --cr-gray02: #eeeeee;
+  --cr-gray03: #dddddd;
+  --cr-gray04: #cccccc;
+  --cr-gray05: #bbbbbb;
+  --cr-gray06: #999999;
+  --cr-gray07: #777777;
+  --cr-gray08: #555555;
+  --cr-gray09: #333333;
 }
 
 a {
