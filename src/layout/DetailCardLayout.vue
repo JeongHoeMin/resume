@@ -1,7 +1,7 @@
 <script setup lang="ts">
 export interface IDetailCardProps {
   summary: string;
-  body: Array<string>;
+  body: Array<string> | string;
 }
 
 defineProps<IDetailCardProps>();
@@ -10,7 +10,8 @@ defineProps<IDetailCardProps>();
 <template>
   <div class="detail-card">
     <p class="summary caption">{{ summary }}</p>
-    <ul>
+    <p v-if="typeof body === 'string'" class="text">{{ body }}</p>
+    <ul v-else>
       <li v-for="text of body">
         <p class="text">{{ text }}</p>
       </li>
@@ -26,6 +27,8 @@ defineProps<IDetailCardProps>();
     margin: 0;
     text-align: start;
     font-size: 0.97rem;
+    white-space: pre-wrap;
+    word-break: break-all;
   }
 }
 </style>
