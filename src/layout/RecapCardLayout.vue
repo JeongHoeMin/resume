@@ -25,7 +25,7 @@ const dateToString = (date: Date | null | string) => {
   <div class="recap-card">
     <slot name="default">
       <h2 class="title">{{ title }}</h2>
-      <a class="caption link" :href="link">{{link}}</a>
+      <a class="caption link" :href="link" target="_blank">{{link}}</a>
       <p class="description">{{description}}</p>
       <p class="period">{{dateToString(periodStart)}} ~ {{dateToString(periodEnd)}}</p>
     </slot>
