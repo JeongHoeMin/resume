@@ -1,6 +1,6 @@
 <script setup lang="ts">
 export interface IDetailCardProps {
-  summary: string;
+  summary?: string;
   body: Array<string> | string;
 }
 

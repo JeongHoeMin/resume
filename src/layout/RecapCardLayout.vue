@@ -24,10 +24,10 @@ const dateToString = (date: Date | null | string) => {
 <template>
   <div class="recap-card">
     <slot name="default">
-      <h2 class="title">{{ title }}</h2>
-      <a class="caption link" :href="link" target="_blank">{{link}}</a>
-      <p class="description">{{description}}</p>
-      <p class="period">{{dateToString(periodStart)}} ~ {{dateToString(periodEnd)}}</p>
+      <h2 v-if="title" class="title">{{ title }}</h2>
+      <a v-if="link" class="caption link" :href="link" target="_blank">{{link}}</a>
+      <p v-if="description" class="description">{{description}}</p>
+      <p v-if="period" class="period">{{dateToString(periodStart)}} ~ {{dateToString(periodEnd)}}</p>
     </slot>
   </div>
 </template>
@@ -40,7 +40,7 @@ const dateToString = (date: Date | null | string) => {
   text-align: start;
   justify-content: start;
   width: 15rem;
-  height: 10rem;
+  height: auto;
   padding: 1rem 0;
   margin-inline: 1rem;
 
