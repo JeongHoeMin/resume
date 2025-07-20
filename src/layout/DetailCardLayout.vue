@@ -22,6 +22,7 @@ defineProps<IDetailCardProps>();
 <style scoped>
 .detail-card {
   min-width: 23rem;
+  flex-grow: 1;
   margin-inline: 1rem;
   .text {
     margin: 0;
