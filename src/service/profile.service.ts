@@ -1,12 +1,12 @@
 export const getName = () => {
-  return ''
+  return '정회민'
 }
 export const getPosition = () => {
-  return ''
+  return '서버 백엔드 엔지니어'
 }
 export const getEmail = () => {
-  return ''
+  return 'wony1102@naver.com'
 }
 export const getGithubLink = () => {
-  return ''
+  return 'https://github.com/JungHoiMin'
 }
