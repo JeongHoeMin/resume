@@ -63,16 +63,16 @@ export const getProjectList = (): IProjectCardProps[] => {
         'Vue.js, NestJS, Electron, PostgreSQL, SSE, SVN, Inno Setup, Windows Command, PM2',
       ]
     },
-    {
-      title: 'CTIAgent Middleware',
-      description: '한일네트웍스/R&D/사원',
-      period: [new Date('2024-03'), new Date('2024.03')],
-      summary: '콜센터 상담원들이 업무시 사용하는 아웃/인바운드 콜 연동 모듈 중계 서비스',
-      body: [
-        'TCP 소켓 통신과 Socket.io 통신을 중계',
-        'Node.js, TCP Server, Socket.io Client, PM2',
-      ]
-    },
+    // {
+    //   title: 'CTIAgent Middleware',
+    //   description: '한일네트웍스/R&D/사원',
+    //   period: [new Date('2024-03'), new Date('2024.03')],
+    //   summary: '콜센터 상담원들이 업무시 사용하는 아웃/인바운드 콜 연동 모듈 중계 서비스',
+    //   body: [
+    //     'TCP 소켓 통신과 Socket.io 통신을 중계',
+    //     'Node.js, TCP Server, Socket.io Client, PM2',
+    //   ]
+    // },
     {
       title: 'NTS Manager Util v2',
       description: '한일네트웍스/R&D/사원',
