@@ -1,9 +1,9 @@
-import type {ICertificateCardProps} from "../components/CertificateCard.vue";
+import type { ICertificateCardProps } from "../components/CertificateCard.vue";
 
-export const getCertificateList = ():ICertificateCardProps[] => {
+export const getCertificateList = (): ICertificateCardProps[] => {
   return [
     {
-      title: '정보처리산업기사',
+      title: '정보처리기사',
       period: [new Date('2022-09-02'), '영구 유효'],
       description: '발급처: 한국산업인력공단'
     },
