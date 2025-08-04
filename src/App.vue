@@ -6,6 +6,7 @@ import CapabilitySection from "./components/CapabilitySection.vue";
 import SkillSection from "./components/SkillSection.vue";
 import ProjectSection from "./components/ProjectSection.vue";
 import CertificateSection from "./components/CertificateSection.vue";
+import MilitarySection from "./components/MilitarySection.vue";
 </script>
 
 <template>
@@ -17,6 +18,7 @@ import CertificateSection from "./components/CertificateSection.vue";
     <CapabilitySection />
     <SkillSection />
     <ProjectSection />
+    <MilitarySection />
   </div>
 </template>
 
