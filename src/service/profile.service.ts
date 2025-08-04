@@ -8,5 +8,5 @@ export const getEmail = () => {
   return 'wony1102@naver.com'
 }
 export const getGithubLink = () => {
-  return 'https://github.com/JungHoiMin'
+  return 'https://github.com/JeongHoeMin'
 }
