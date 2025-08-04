@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import CardLayout from "../layout/CardLayout.vue";
-import RecapCardLayout from "../layout/RecapCardLayout.vue";
 import DetailCardLayout from "../layout/DetailCardLayout.vue";
 import {onBeforeMount, ref} from "vue";
 import {getMilitary} from "../service/military.service.ts";
